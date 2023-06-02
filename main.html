@@ -3,35 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>BookStoreOnline</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="apps.js"></script>
+
+
 </head>
 <body>
 <div class="main">
     <header class="header">
-        <h1 class="Title">
-            <a href="">BookStoreOnline</a>
+        <h1>
+            <a class="Title" href="/">BookStoreOnline</a>
         </h1>
         <div class="header_head">
             <form action="/submit-form" method="post">
-                <label for="search">Поиск...</label>
-                <input type="text" id="search" name="search">
-                <button type="submit"><img src="https://schtirlitz.ru/800/600/https/kenka.ru/local/templates/newdealer/images/search.png" alt="search" height="12" width="12"></button>
+                <label for="search"></label>
+                <input type="text" id="search" name="search" placeholder="Поиск...">
+
             </form>
         </div>
 
         <div class="user_block_item">
+            <img class="profile" src="https://cdn.onlinewebfonts.com/svg/img_408476.png" alt="Profile" height="35"
+                 width="35">
             <div class="user_registration">
-                <img src="https://cdn.onlinewebfonts.com/svg/img_408476.png" alt="Profile" height="35" width="35">
                 <ul class="list_item">
-                    <li><a href="">Регистрация</a></li>
-                    <li><a href="">Войти</a></li>
+                    <li><a class="list_item" href="">Регистрация</a></li>
+                    <li><a class="list_item" href="">Войти</a></li>
                 </ul>
             </div>
 
+            <img class="basket-png" src="https://cdn.onlinewebfonts.com/svg/img_304821.png" alt="basket" height="35"
+                 width="35">
             <div class="user_basket">
-                <img src="https://cdn.onlinewebfonts.com/svg/img_304821.png" alt="basket" height="35" width="35">
                 <ul class="list_item_basket">
-                    <li><a href="">В КОРЗИНЕ</a></li>
-                    <li><a href="">0 шт.</a></li>
+                    <li><a class="list_item_basket" href="">В КОРЗИНЕ</a></li>
+                    <li><a class="list_item_basket" href="">0 шт.</a></li>
                 </ul>
 
             </div>
@@ -42,174 +49,188 @@
     <div class="main">
         <div class="slider-wrapper">
             <div class="wrapper">
-                <div class="slider">
-                    <div class="slides slide1">
-                        <img src="https://bookskazan.ru/upload/iblock/0c7/f0s3fwf5zfig224a8tf110x4j2dhzou9/больше%20книг%20виджет.png" alt="slide1" height="437" width="1280">
-                    </div>
-                    <div class="slides slide2">
-                        <img src="https://bookskazan.ru/upload/iblock/7b2/uzo0w8wf92d27xx84hv9jui4fiborhig/Геншин%20виджет.png" alt="slide2" height="437" width="1280">
-                    </div>
-                    <div class="slides slide3">
-                        <img src="https://bookskazan.ru/upload/iblock/778/84pz7serm3p8q34d4yec7onl034r0c26/школьная%20литература.png" alt="slide3" height="437" width="1280">
-                    </div>
-                </div>
-                <input type="radio" name="point" id="slide1" checked>
-                <input type="radio" name="point" id="slide2">
-                <input type="radio" name="point" id="slide3">
-                <input type="radio" name="point" id="slide4">
-                <input type="radio" name="point" id="slide5">
-                <div class="controls">
-                    <label for="slide1"></label>
-                    <label for="slide2"></label>
-                    <label for="slide3"></label>
-                    <label for="slide4"></label>
-                    <label for="slide5"></label>
-                </div>
-            </div>
-        </div>
-        <div class="book-tabs">
-            <div class="tabs">
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="#">Лидеры продаж</a></li>
-                        <li><a href="#">Хиты</a></li>
-                        <li><a href="#">Новинки</a></li>
-                    </ul>
-                </nav>
+                <a href="" class="prev-button"><img src="https://cdn0.iconfinder.com/data/icons/essentials-9/128/__Left-512.png"
+                                                    alt="prev" height="40" width="40"></a>
                 <div class="tabs-wrapper">
-                    <a href=""><img src="https://cdn0.iconfinder.com/data/icons/essentials-9/128/__Left-512.png" alt="prev" height="40" width="40"></a>
-                    <a href=""><img src="https://cdn0.iconfinder.com/data/icons/essentials-9/128/__Right-1024.png" alt="next" height="40" width="40"></a>
-                </div>
-
-                <div class="viewport-tabs">
-                    <ul class="list-item">
-                        <li class="item1">
-                            <div class="item-img">
-                                <img src="https://8library.ru/uploads/posts/2022-04/4629827_Garri-Potter-i-Orden-Feniksa.png" alt="item1" height="295" width="188">
-                            </div>
-                            <div class="item-footer">
-                                <a href="">
-                                    <img src="https://cdn.icon-icons.com/icons2/816/PNG/512/basket_icon-icons.com_66289.png" alt="basket5" height="35" width="35">
-                                    <img src="" alt="footer1" height="43" width="188">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="item2">
-                            <div class="item-img">
-                                <img src="https://smartstart.shop/wa-data/public/shop/products/64/35/33564/images/86423/GP_orden_feniksa_mahaon_001.750x0.jpg" alt="item2" height="295" width="188">
-                            </div>
-                            <div class="item-footer">
-                                <a href="">
-                                    <img src="https://cdn.icon-icons.com/icons2/816/PNG/512/basket_icon-icons.com_66289.png" alt="basket5" height="35" width="35">
-                                    <img src="" alt="footer2" height="43" width="188">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="item3">
-                            <div class="item-img">
-                                <img src="https://i.pinimg.com/originals/cc/6f/7a/cc6f7ad569cc6800eaf681c38fb57c64.png" alt="item3" height="295" width="188">
-                            </div>
-                            <div class="item-footer">
-                                <a href="">
-                                    <img src="https://cdn.icon-icons.com/icons2/816/PNG/512/basket_icon-icons.com_66289.png" alt="basket5" height="35" width="35">
-                                    <img src="" alt="footer3" height="43" width="188">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="item4">
-                            <div class="item-img">
-                                <img src="https://i.pinimg.com/736x/ad/cd/f3/adcdf34621e55489792ef132870a48e5--coraline-book-coraline-movie-poster.jpg" alt="item4" height="295" width="188">
-                            </div>
-                            <div class="item-footer">
-                                <a href="">
-                                    <img src="https://cdn.icon-icons.com/icons2/816/PNG/512/basket_icon-icons.com_66289.png" alt="basket5" height="35" width="35">
-                                    <img src="" alt="footer4" height="43" width="188">
-                                </a>
-                            </div>
-                        </li>
-                        <li class="item5">
-                            <div class="item-img">
-                                <img src="https://i.pinimg.com/originals/6a/68/75/6a6875d7e042c78fa337d50506601ef7.jpg" alt="item5" height="295" width="188">
-                            </div>
-                            <div class="item-footer">
-                                <a href="">
-                                    <img src="https://cdn.icon-icons.com/icons2/816/PNG/512/basket_icon-icons.com_66289.png" alt="basket5" height="35" width="35">
-                                    <img src="" alt="footer5" height="43" width="188">
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="slider">
+                        <div class="slides slide1">
+                            <img src="https://bookskazan.ru/upload/iblock/0c7/f0s3fwf5zfig224a8tf110x4j2dhzou9/больше%20книг%20виджет.png"
+                                 alt="slide1" height="437" width="1280">
+                        </div>
+                        <div class="slides slide2">
+                            <img src="https://bookskazan.ru/upload/iblock/7b2/uzo0w8wf92d27xx84hv9jui4fiborhig/Геншин%20виджет.png"
+                                 alt="slide2" height="437" width="1280">
+                        </div>
+                        <div class="slides slide3">
+                            <img src="https://bookskazan.ru/upload/iblock/778/84pz7serm3p8q34d4yec7onl034r0c26/школьная%20литература.png"
+                                 alt="slide3" height="437" width="1280">
+                        </div>
+                    </div>
+                <a href="" class="next-button"><img src="https://cdn0.iconfinder.com/data/icons/essentials-9/128/__Right-1024.png"
+                                                    alt="next" height="40" width="40"></a>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="book-tabs-container">
+        <div class="tabs-block">
+            <div class="tabs">
+                <div class="tab active" data-tab="reading">В процессе чтения</div>
+                <div class="tab" data-tab="read">Прочитано</div>
+            </div>
 
-        <div class="container">
-            <h1>КАТАЛОГ ТОВАРОВ</h1>
-            <nav class="catalog">
-                <ul class="navbar">
-                    <a href="">
-                        <h3>КНИГИ</h3>
-                    </a>
+            <div class="tab-content" id="reading">
+                <ul class="book-list">
+                    <li>Гарри Поттер и Орден феникса</li>
+                    <li>Цветы для Элджернона</li>
+                    <li>КИсточник 2 том</li>
                 </ul>
-            </nav>
-            <div class="catalog-navbar">
-                <h4>Детская литература</h4>
-                <p>Аниме детские книги, раскраски, наклейки <br> - Графические романы, комиксы для детей <br>
-                    -Детская литература на татарском, чувашском, <br> удмуртском, башкирском, марийском языках
-                    <br> - Игры. Развлечения. Поделки - Книги для самых маленьких
-                </p>
-                <a href=""><h5>Показать всё</h5></a>
             </div>
 
-            <div class="catalog-navbar">
-                <h4>Прикладная литература</h4>
-                <p>Автомобильный транспорт -  Азбука красоты - Астрология -<br>
-                    Беременность и уход за ребенком - Блокноты -
-                </p>
-                <a href=""><h5>Показать всё</h5></a>
+            <div class="tab-content" id="read">
+                <ul class="book-list">
+                    <li>Атлант расправил плечи 1 том</li>
+                    <li>Атлант расправил плечи 2 том</li>
+                    <li>Атлант расправил плечи 3 том</li>
+                    <li>Источник 1 том</li>
+                </ul>
             </div>
-
-            <div class="catalog-navbar">
-                <h4>Научно-популярная литература</h4>
-                <p>История науки -  Космос и вселенная  - Роботы и техника -<br>
-                    Современная наука -
-                </p>
-                <a href=""><h5>Показать всё</h5></a>
-            </div>
-
-            <div class="catalog-navbar">
-                <h4>Учебная литература</h4>
-                <p>Атласы и контурные карты -  Гуманитарные и общественные науки <br>
-                    - Дополнительные пособия - Современная наука -
-                </p>
-                <a href=""><h5>Показать всё</h5></a>
-            </div>
-
-            <button class="category-button"> ВСЕ КАТЕГОРИИ КАТАЛОГА <img src="https://cdn.icon-icons.com/icons2/1904/PNG/512/downarrow_121316.png" alt="ukazatel" height="12" width="12"> </button>
+        </div>
+        <div class="viewport-tabs">
+            <ul class="list-item" style="display: flex">
+                <li class="item1">
+                    <div class="item-img">
+                        <img src="https://8library.ru/uploads/posts/2022-04/4629827_Garri-Potter-i-Orden-Feniksa.png"
+                             alt="item1" height="295" width="188">
+                    </div>
+                    <div class="item-footer">
+                        <a href="">
+                            <img src="https://cdn.icon-icons.com/icons2/816/PNG/512/basket_icon-icons.com_66289.png"
+                                 alt="basket5" height="35" width="35">
+                            <img src="" alt="footer1" height="43" width="188">
+                        </a>
+                    </div>
+                </li>
+                <li class="item2">
+                    <div class="item-img">
+                        <img src="https://smartstart.shop/wa-data/public/shop/products/64/35/33564/images/86423/GP_orden_feniksa_mahaon_001.750x0.jpg"
+                             alt="item2" height="295" width="188">
+                    </div>
+                    <div class="item-footer">
+                        <a href="">
+                            <img src="https://cdn.icon-icons.com/icons2/816/PNG/512/basket_icon-icons.com_66289.png"
+                                 alt="basket5" height="35" width="35">
+                            <img src="" alt="footer2" height="43" width="188">
+                        </a>
+                    </div>
+                </li>
+                <li class="item3">
+                    <div class="item-img">
+                        <img src="https://i.pinimg.com/originals/cc/6f/7a/cc6f7ad569cc6800eaf681c38fb57c64.png"
+                             alt="item3" height="295" width="188">
+                    </div>
+                    <div class="item-footer">
+                        <a href="">
+                            <img src="https://cdn.icon-icons.com/icons2/816/PNG/512/basket_icon-icons.com_66289.png"
+                                 alt="basket5" height="35" width="35">
+                            <img src="" alt="footer3" height="43" width="188">
+                        </a>
+                    </div>
+                </li>
+                <li class="item4">
+                    <div class="item-img">
+                        <img src="https://i.pinimg.com/736x/ad/cd/f3/adcdf34621e55489792ef132870a48e5--coraline-book-coraline-movie-poster.jpg"
+                             alt="item4" height="295" width="188">
+                    </div>
+                    <div class="item-footer">
+                        <a href="">
+                            <img src="https://cdn.icon-icons.com/icons2/816/PNG/512/basket_icon-icons.com_66289.png"
+                                 alt="basket5" height="35" width="35">
+                            <img src="" alt="footer4" height="43" width="188">
+                        </a>
+                    </div>
+                </li>
+                <li class="item5">
+                    <div class="item-img">
+                        <img src="https://i.pinimg.com/originals/6a/68/75/6a6875d7e042c78fa337d50506601ef7.jpg"
+                             alt="item5" height="295" width="188">
+                    </div>
+                    <div class="item-footer">
+                        <a href="">
+                            <img src="https://cdn.icon-icons.com/icons2/816/PNG/512/basket_icon-icons.com_66289.png"
+                                 alt="basket5" height="35" width="35">
+                            <img src="" alt="footer5" height="43" width="188">
+                        </a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
-
-    <div class="info">
-        <div class="name">
-            <h2>"BookStoreOnline"  интернет-магазин</h2>
-            <p>bookstoreonline.ru – официальный интернет-магазин одной из самых крупных и динамично развивающихся сетей книжных магазинов Поволжья ”BookStoreOnline”.
-                <br>
-                Более 130 тысяч наименований учебной и художественной литературы, канцтоваров, товаров для творчества, вы можете приобрести быстро и недорого
-                на bookstoreonline.ru.
-                <br>
-                Купив книгу в интернет-магазине bookskazan, вы становитесь не просто очередным покупателем, а вступаете в клуб книголюбов, для которых доступны различные
-                конкурсы и акции, интересные подборки, информация о новинках и бестселлерах в мире книг, мастер-классы и встречи с авторами.
-            </p>
-
-        </div>
-    </div>
-
-
-
-    <footer class="footer">
-        <h5> &copy Все права защищены, 2023 </h5>
-    </footer>
 </div>
+
+<div class="container" style="display: flex">
+    <h1>КАТАЛОГ ТОВАРОВ</h1>
+    <div class="catalog-navbar1">
+        <h4>Детская литература</h4>
+        <p>Аниме детские книги, раскраски, наклейки <br> - Графические романы, комиксы для детей <br>
+            -Детская литература на татарском, чувашском, <br> удмуртском, башкирском, марийском языках
+            <br> - Игры. Развлечения. Поделки - Книги для самых маленьких
+        </p>
+        <a class="view-all" href=""><h5>Показать всё</h5></a>
+    </div>
+
+    <div class="catalog-navbar2">
+        <h4>Прикладная литература</h4>
+        <p>Автомобильный транспорт - Азбука красоты - Астрология -<br>
+            Беременность и уход за ребенком - Блокноты -
+        </p>
+        <a class="view-all" href=""><h5>Показать всё</h5></a>
+    </div>
+
+    <div class="catalog-navbar3">
+        <h4>Научно-популярная литература</h4>
+        <p>История науки - Космос и вселенная - Роботы и техника -<br>
+            Современная наука -
+        </p>
+        <a class="view-all" href=""><h5>Показать всё</h5></a>
+    </div>
+
+    <div class="catalog-navbar4">
+        <h4>Учебная литература</h4>
+        <p>Атласы и контурные карты - Гуманитарные и общественные науки <br>
+            - Дополнительные пособия - Современная наука -
+        </p>
+        <a class="view-all" href=""><h5>Показать всё</h5></a>
+    </div>
+
+    <button class="category-button"> ВСЕ КАТЕГОРИИ КАТАЛОГА <img
+            src="https://cdn.icon-icons.com/icons2/1904/PNG/512/downarrow_121316.png" alt="ukazatel" height="12"
+            width="12"></button>
+</div>
+</div>
+
+<div class="info">
+    <div class="name">
+        <h2>"BookStoreOnline" интернет-магазин</h2>
+        <p>bookstoreonline.ru – официальный интернет-магазин одной из самых крупных и динамично развивающихся сетей
+            книжных магазинов Поволжья ”BookStoreOnline”.
+            <br>
+            Более 130 тысяч наименований учебной и художественной литературы, канцтоваров, товаров для творчества,
+            вы можете приобрести быстро и недорого
+            на bookstoreonline.ru.
+            <br>
+            Купив книгу в интернет-магазине bookskazan, вы становитесь не просто очередным покупателем, а вступаете
+            в клуб книголюбов, для которых доступны различные
+            конкурсы и акции, интересные подборки, информация о новинках и бестселлерах в мире книг, мастер-классы и
+            встречи с авторами.
+        </p>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <h5> &copy Все права защищены, 2023 </h5>
+</footer>
 
 </body>
 </html>
